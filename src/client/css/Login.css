@@ -1,0 +1,58 @@
+#login {
+    height: calc(100vh - 112px);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login>h2 {
+    margin-bottom: 23px;
+}
+
+input {
+    border: 0;
+    width: 216px;
+    height: 43px;
+    background-color: #F1F1F1;
+}
+
+.LoginInput {
+    display: flex;
+    width: 270px;
+    height: 43px;
+    background-color: #F1F1F1;
+    margin-bottom: 4px;
+}
+
+.loginIcon {
+    width: 22px;
+    height: 22px;
+    margin: 10px 16px;
+}
+
+#LoginBtn {
+    width: 270px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #0F2C54;
+    color: #fff;
+    margin-top: 6px;
+    cursor: pointer;
+    font-family: 'GmarketSansMedium';
+    font-size: 13px;
+}
+
+#loginTxt {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 13px;
+}
+
+#loginTxt span {
+    text-decoration: underline;
+}

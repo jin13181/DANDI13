@@ -1,0 +1,22 @@
+#bottom-tab{
+    width:100%;
+    height:60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+#bottom-tab a{
+    float:left;
+    width:20%;
+    height:100%;
+}
+
+#tabIcon {
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+
+.active img {
+    filter: invert(13%) sepia(97%) saturate(7332%) hue-rotate(351deg) brightness(102%) contrast(85%);
+}

@@ -1,0 +1,77 @@
+/*지도 탭 내 컨텐츠 영역*/
+#map{
+    width:100%;
+    height: calc(100vh - 112px);
+    background-color:  #F4F4F4;
+    overflow: scroll;
+}
+
+#map h1 {
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 16px;
+    margin-left: 20px;
+}
+
+#map h1>span {
+    font-size: 16px;
+}
+
+
+#mapImages {
+    position: relative;
+}
+
+#backgroundMap {
+    width: 100vw;
+    transform: rotateZ( 15deg );
+    margin-top: 10%;
+}
+
+.destination {
+    width: 45px;
+    height: 47px;
+    position:absolute;
+}
+
+#destination1 {
+    top: 30%;
+    left: 30%;
+}
+
+#destination2 {
+    top: 24%;
+    left: 64%;
+}
+
+#destination3 {
+    top: 44%;
+    left: 44%;
+}
+
+#destination4 {
+    top: 48%;
+    left: 63%;
+}
+
+#destination5 {
+    top: 55%;
+    left: 25%;
+}
+
+#destination6 {
+    top: 63%;
+    left: 55%;
+}
+
+#btm-contents{
+    font-family: 'GmarketSansMedium';
+    text-align: center;
+}
+
+#txt {
+    font-family: 'GmarketSansMedium';
+    font-size: 16px;
+}
+

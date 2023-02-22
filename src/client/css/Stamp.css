@@ -1,0 +1,66 @@
+/*스탬프 탭 내 컨텐츠 영역*/
+#stamp {
+    width:100%;
+    height: calc(100vh - 112px);
+    background-color:  #F4F4F4;
+    overflow: scroll;
+}
+
+#stamp h1 {
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 16px;
+    margin-left: 20px;
+}
+
+#stamp h1>span {
+    font-size: 16px;
+}
+
+#stampwrap{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 8vh;
+}
+
+.stamp {
+    width: 111px;
+    height: 111px;
+    
+}
+
+#stampColum {
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+    margin: auto;
+}
+
+.stampRow {
+    /* display: flex;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 14px;
+}
+
+#stampBtnWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.stampBtn {
+    font-family: 'GmarketSansMedium';
+    font-size: 18px;
+    width: 120px;
+    height: 37px;
+    line-height: 37px;
+    border-radius: 34px;
+    background-color: #727071;
+    color: #fff;
+    text-align: center;
+}

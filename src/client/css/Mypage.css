@@ -1,0 +1,61 @@
+/*메뉴 탭 내 컨텐츠 영역*/
+
+#mypage{
+    width:100%;
+    height: calc(100vh - 112px);
+    background-color: #F4F4F4;
+    overflow: scroll;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#mypage h1 {
+  font-family: 'GmarketSansMedium';
+  font-size: 22px;
+  font-weight: 700;
+  margin: 38px 20px 36px 20px;
+
+
+}
+.mpColWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  
+}
+   
+.mpRowWrap {
+  display: flex;
+  margin-left: 20px;
+}
+
+.mplabel {
+  font-weight: 600;
+}
+
+#userName {
+  margin-left: 51px;
+}
+
+#userId {
+  margin-left: 37px;
+}
+
+#pwBtn {
+  width: 80px;
+  height: 30px;
+  background-color: #0F2C54;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 24px;
+}
+
+#userPoint {
+  margin-left: 37px;
+  font-weight: 600;
+}
+
+#userPointTxt {
+  margin-left: 37px;
+  font-size: 12px;
+}

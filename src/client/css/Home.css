@@ -1,0 +1,76 @@
+/*홈화면 탭 내 컨텐츠 영역*/
+#home{
+    width:100%;
+    height: calc(100vh - 112px);
+    background-color:  #F4F4F4;
+    position: relative;
+    overflow: scroll;
+}
+
+#homeTitle>p:first-child {
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    font-weight: 700;
+}
+#homeTitle>p:nth-child(2) {
+    font-family: 'GmarketSansMedium';
+    font-size: 28px;
+    font-weight: 700;
+} 
+
+#homeTitle>p:nth-child(3) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 500; 
+}
+
+
+#logo {
+    width: 132px;
+}
+
+#homeTitle {
+    padding-top: 42px;
+    margin-left: 14px;
+}
+
+#HomeSwiperWrap{
+    background-color: #fff;
+    height: 316px;
+    box-shadow: 0 3px 6px rgba(80,80,80,0.16);
+}
+
+#HomeSwiper {
+    margin-top: 4vh;
+}
+
+.swiper-slide, .swiper-slide-active {
+    width: 375px;
+}
+
+.slidePic {
+    display: block;
+    object-fit: cover;
+    width: 375px;
+    height: 264px;
+    margin: 25px auto;
+}
+
+/*==================*/
+.homeModalOverlay {
+    position: relative;
+}
+
+.modal-content-dandi {
+    width: 94vw; 
+    height: 399px;
+    z-index: 9999;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 35px;
+
+
+}

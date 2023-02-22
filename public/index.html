@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Dandi</title>
+    <!--kakao map API-->
+    <script 
+      type="text/javascript" 
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=992025d352480cc1bddef943a40767ed&libraries=services">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+
+      const toastMessage = (message) => {
+        Swal.mixin({
+          toast: true,
+          position: "bottom",
+          showConfirmButton: false,
+          timer: 2000,
+        }).fire({ title: `${message}`, icon: "error" });
+      }
+
+    //안될경우 location_no를 code로 바꿔사용하기 
+      const output = async (location_no) => {
+        toastMessage("qr확인");
+        
+        const userString = localStorage.getItem('user');
+        const member_no = JSON.parse(userString).no;
+
+        
+        console.log(member_no);
+        //member_no 확인
+        toastMessage(member_no);
+
+        //location_no 확인
+        toastMessage(location_no);
+        const data = await (await fetch("https://api-fvwt.onrender.com/api/record", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({ member_no , location_no}),
+        })).json();
+
+        if (data.code === "OK") {
+          //window.location.replace("/stamp");
+          // 기존도메인 + stamp
+          //window.location.href="/stamp";
+          window.location = "/stamp";
+        } 
+        // 두번 렌더링됨?
+        //else toastMessage(data.message);
+      }
+
+      //test 하기 위한 용도 // android에서 스탬프가 뜨는지..확인해볼 예정 20230222/10:53 
+      //숫자가 들어가나 문자나 상관없음
+      // output(6);
+
+    </script>
+  </body>
+</html>

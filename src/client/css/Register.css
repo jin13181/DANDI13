@@ -1,0 +1,65 @@
+#register {
+    height: calc(100vh - 112px);
+    background-color: #fff;
+    overflow: scroll;
+    font-family: 'GmarketSansMedium';
+}
+
+.registerForm {
+    margin: 58px 20px;
+}
+
+.registerForm h4 {
+    font-size: 22px;
+    margin-bottom: 103px;
+}
+
+.registerForm span {
+    font-size: 13px;
+    color: red;
+}
+
+#idWrap {
+    margin-bottom: 57px;
+}
+
+#pwWrap {
+    margin-bottom: 25px;
+}
+
+#pwCfWrap {
+    margin-bottom: 52px;
+}
+
+#pwCfTitle {
+    margin-bottom: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.textInput {
+    width: 340px;
+}
+
+#Btn {
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    line-height: 43px;
+    cursor: pointer;
+}
+
+#cancelBtn {
+    width: 164px;
+    height: 43px;
+    background-color: #AEAEAE;
+    border-radius: 10px;
+}
+
+#registerBtn {
+    width: 164px;
+    height: 43px;
+    background-color: #0F2C54;
+    margin-left: 12px;
+    border-radius: 10px;
+}
